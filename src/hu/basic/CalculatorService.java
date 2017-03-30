@@ -1,5 +1,7 @@
 package hu.basic;
 
+import java.util.Random;
+
 //1. feladat
 //Lérezhonom a CalculatorService osztályt
 public class CalculatorService {
@@ -35,5 +37,15 @@ public class CalculatorService {
         return result;
 
     }
+
+    public String randomgenerate(float min, float max) {
+        Random random = new Random();
+        float randomFloat = min + random.nextFloat() * (max - min);
+        System.out.print(randomFloat + "\n");
+        if (randomFloat == Math.round(randomFloat)) {
+            return "Egész szám";
+        } else return "Nem nem egész szám";
+    }
+
 }
 

@@ -26,7 +26,16 @@ public class Main {
         // Behívom a CalculatorHelper osztályt, és azt mondom, hogy új értéket akarok neki küldeni
         CalculatorHelper calculatorHelper = new CalculatorHelper();
         // Elküldöm a Helper metódusnak azt az osztály
-        System.out.println(calculatorHelper.input());
+        System.out.println("A művelet eredménye: " + calculatorHelper.input() + "\n");
+
+        // 4. Feladat
+
+        //Kiírom, hogy melyik feladatról van szó, majd sortörlést használok a függvényben
+        System.out.println("4. feladat: Egy random szám, melynek értéke: \n");
+        /*Behívom a CalculatorService osztályt, randomgenerate metódusátés azt mondom,
+        hogy új értéket akarok neki küldeni */
+        System.out.println(calculatorService.randomgenerate(25, 50));
+
 
 
     }
