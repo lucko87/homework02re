@@ -36,6 +36,11 @@ public class Main {
         hogy új értéket akarok neki küldeni */
         System.out.println(calculatorService.randomgenerate(25, 50));
 
+        // 6. Feladat
+
+        //Kiírom, hogy melyik feladatról van szó, majd sortörlést használok a függvényben
+        System.out.println("5. feladat: Két random szám vizsgálata feltétel alapján: \n");
+        calculatorService.randomNumbers();
 
 
     }

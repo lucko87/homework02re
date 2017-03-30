@@ -47,5 +47,17 @@ public class CalculatorService {
         } else return "Nem nem egész szám";
     }
 
+    public void randomNumbers() {
+        Random random = new Random();
+        int numberA = random.nextInt(50) + 100;
+        int numberB = random.nextInt(50) + 100;
+        System.out.println(numberA + " " + numberB);
+        if ((numberA > numberB && numberA % 2 == 0) || (numberA < numberB && numberA % 2 == 1)) {
+            System.out.println(numberA);
+        } else if (numberB > numberA && numberB % 2 == 1) {
+            System.out.println(numberB);
+        } else System.out.println(Math.pow(numberA, numberB));
+    }
+
 }
 
