@@ -12,4 +12,28 @@ public class CalculatorService {
 //Azt mondom, hogy a metódus visszatérési értéke a kettővel való oszts
         return !(number % 2 != 0);
     }
+
+    public int calculate(int x, int y, char operation) {
+
+        int result = 0;
+        switch (operation) {
+            case '+':
+                result = x + y;
+                break;
+            case '-':
+                result = x - y;
+                break;
+            case '*':
+                result = x * y;
+                break;
+            case '/':
+                result = x / y;
+                break;
+            default:
+                System.out.println("Hibás művelet!");
+        }
+        return result;
+
+    }
 }
+
