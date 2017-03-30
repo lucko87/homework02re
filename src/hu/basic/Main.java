@@ -19,6 +19,15 @@ public class Main {
         // Elküdlöm calculculate metódusnak a három értéket, és kiíratom az vissakapott értéket
         System.out.println(calculatorService.calculate(5, 2, '*') + "\n");
 
+        // 3. Feladat
+
+        //Kiírom, hogy melyik feladatról van szó, majd sortörlést használok a függvényben
+        System.out.println("2. feladat: At 5-ös és a 2-es szám szorzata: \n");
+        // Behívom a CalculatorHelper osztályt, és azt mondom, hogy új értéket akarok neki küldeni
+        CalculatorHelper calculatorHelper = new CalculatorHelper();
+        // Elküldöm a Helper metódusnak azt az osztály
+        System.out.println(calculatorHelper.input());
+
 
     }
 }
