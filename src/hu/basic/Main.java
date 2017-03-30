@@ -15,14 +15,14 @@ public class Main {
         // 2. Feladat
 
         //Kiírom, hogy melyik feladatról van szó, majd sortörlést használok a függvényben
-        System.out.println("2. feladat: At 5-ös és a 2-es szám szorzata: \n");
+        System.out.println("2. feladat: Az 5-ös és a 2-es szám szorzata: \n");
         // Elküdlöm calculculate metódusnak a három értéket, és kiíratom az vissakapott értéket
         System.out.println(calculatorService.calculate(5, 2, '*') + "\n");
 
         // 3. Feladat
 
         //Kiírom, hogy melyik feladatról van szó, majd sortörlést használok a függvényben
-        System.out.println("2. feladat: At 5-ös és a 2-es szám szorzata: \n");
+        System.out.println("3. feladat: Két számmal végezett művelet eredményét adja: \n");
         // Behívom a CalculatorHelper osztályt, és azt mondom, hogy új értéket akarok neki küldeni
         CalculatorHelper calculatorHelper = new CalculatorHelper();
         // Elküldöm a Helper metódusnak azt az osztály
